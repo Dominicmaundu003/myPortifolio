@@ -1,0 +1,40 @@
+body {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+header {
+    background-color: blue;
+    height: 400px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 10px;
+    align-items: center;
+}
+header .topic {
+    color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: yellow;
+    margin-left: 10px;
+}
+.banner img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+
+
+@media (max-width: 700px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        background-color: red;
+        height: fit-content;
+    }
+}
