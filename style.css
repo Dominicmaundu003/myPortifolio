@@ -4,7 +4,7 @@ body {
 }
 
 header {
-    background-color: blue;
+    background-color: rgb(4, 4, 187);
     height: 400px;
     width: 100%;
     display: grid;
@@ -18,7 +18,7 @@ header .topic {
     display: flex;
     text-align: center;
     align-items: center;
-    margin-left: 10px;
+    margin-left: 5px;
     font-size: 40px;
     max-width: 800px;
     user-select: none;
@@ -28,16 +28,35 @@ header .topic {
     width: 300px;
     border-radius: 50%;
     object-fit: cover;
+    margin-right: 5px;
 }
-
-
+.work, .skills {
+    color: rgb(4, 27, 181);
+    font-style: italic;
+    text-align: center;
+}
+.container {
+    color: black;
+    font-style: normal;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+.card {
+    scroll-behavior: smooth;
+}
+.card p {
+    text-align: left;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+}
 
 
 @media (max-width: 700px) {
     header {
         display: flex;
         flex-direction: column;
-        background-color: red;
         height: fit-content;
     }
 }
